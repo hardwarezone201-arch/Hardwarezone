@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hardware Zone – PCs Armadas</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header {
+      background: linear-gradient(135deg, #0d47a1, #002171);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header img.logo { max-width: 150px; }
+    header h1 { margin-top: 10px; font-size: 1.8em; }
+
+    nav { display: none; } /* minimalista sin navegación */
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .producto h3 { margin-bottom: 10px; color: #0d47a1; }
+    .producto p { font-size: 0.95em; }
+    .producto-img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px; right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 60px; height: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5em; }
+      .producto { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo marca de agua.png" alt="Hardware Zone" class="logo">
+    <h1>Hardware Zone</h1>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="pc-gamer.jpg" alt="PC Gamer" class="producto-img">
+      <h3>PC Gamer</h3>
+      <p>Alta performance para juegos AAA.</p>
+    </div>
+    <div class="producto">
+      <img src="pc-oficina.jpg" alt="PC Oficina" class="producto-img">
+      <h3>PC Oficina</h3>
+      <p>Estabilidad y eficiencia para el día a día.</p>
+    </div>
+    <div class="producto">
+      <img src="pc-Edicion.jpg" alt="PC Edición" class="producto-img">
+      <h3>PC Edición</h3>
+      <p>Potentes para diseño gráfico y video.</p>
+    </div>
+  </section>
+
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/549153404619376" target="_blank" title="Contactanos por WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+</body>
+</html>
